@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 11:40:54 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/17 15:37:31 by laugarci         ###   ########.fr       */
+/*   Created: 2024/01/17 15:12:23 by laugarci          #+#    #+#             */
+/*   Updated: 2024/01/17 16:10:30 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
+
+#include "Animal.hpp"
 
 #include <iostream>
 #include <string>
 
-class Animal {
-	protected:
-		std::string _type;
+class Dog: public Animal {
 	public:
-		Animal();
-		Animal(std::string type);
-		~Animal();
-		Animal(const Animal& old);
-		Animal	&operator=(const Animal& animal);
-		std::string	getType() const;
+		Dog();
+		~Dog();
+		Dog(const Dog& old);
+		Dog &operator=(const Dog& dog);
+		void	makeSound() const;
 };
-
-std::ostream&	operator<<( std::ostream& out, const Animal& animal );
-std::ostream&	operator<<( std::ostream& out, const Animal* animal );
 
 #endif
