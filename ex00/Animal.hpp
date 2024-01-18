@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:40:54 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/17 15:37:31 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/18 11:02:26 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ class Animal {
 	public:
 		Animal();
 		Animal(std::string type);
-		~Animal();
+		virtual ~Animal();
 		Animal(const Animal& old);
 		Animal	&operator=(const Animal& animal);
-		std::string	getType() const;
+		std::string	getType(void) const;
+		virtual void makeSound(void) const;
 };
 
 std::ostream&	operator<<( std::ostream& out, const Animal& animal );
