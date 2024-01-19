@@ -6,13 +6,13 @@
 #    By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 13:17:51 by laugarci          #+#    #+#              #
-#    Updated: 2024/01/12 13:01:22 by laugarci         ###   ########.fr        #
+#    Updated: 2024/01/19 12:01:18 by laugarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap
+NAME = Polymorphism
 
-SRC_FILES = main.cpp ClapTrap.cpp
+SRC_FILES = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 OBJS = $(addprefix $(OBJ_DIR), $(OBJ_FILES))
