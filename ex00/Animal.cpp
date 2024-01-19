@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/17 16:01:10 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/19 11:34:23 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,9 @@ Animal &Animal::operator=(const Animal& animal)
 std::string	Animal::getType() const
 {
 	return (this->_type);
+}
+
+void	Animal::makeSound(void) const
+{
+	std::cout << "* Random animal sounds *" << std::endl;
 }
