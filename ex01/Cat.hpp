@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:12:23 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/17 16:13:36 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/19 12:10:54 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 #define CAT_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 #include <iostream>
 #include <string>
 
 class Cat: public Animal {
+	private:
+		Brain	*_brain;
 	public:
 		Cat();
 		~Cat();

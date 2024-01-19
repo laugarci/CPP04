@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/19 11:41:57 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/19 12:49:28 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "Dog.hpp"
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
+#include "Brain.hpp"
 
 int main()
 {
@@ -47,6 +48,12 @@ int main()
 
 	delete wrongMeta;
 	delete wrongI;
+
+	const Animal *Animals[4];
+	Animals[0] = new Cat;
+	Animals[1] = new Cat;
+	Animals[2] = new Dog;
+	Animals[3] = new Dog;
 
 	return 0;
 }

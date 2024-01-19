@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 15:12:23 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/17 16:10:30 by laugarci         ###   ########.fr       */
+/*   Created: 2024/01/19 12:09:40 by laugarci          #+#    #+#             */
+/*   Updated: 2024/01/19 12:18:09 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 #define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 #include <iostream>
 #include <string>
 
 class Dog: public Animal {
+	private:
+		Brain *_brain;
 	public:
 		Dog();
 		~Dog();
