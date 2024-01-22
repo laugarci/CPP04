@@ -6,20 +6,14 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 11:58:59 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/19 11:59:56 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/22 15:18:17 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
 
-Brain::Brain(std::string type)
-{
-	_type = type;
-}
-
 Brain::Brain()
 {
-	_type = "Brain";
 	std::cout << "Brain default constructor called" << std::endl;
 }
 
@@ -36,9 +30,10 @@ Brain::Brain(const Brain& old)
 
 Brain &Brain::operator=(const Brain& brain)
 {
-	if (this != &brain)
+/*	if (this != &brain)
 	{
 		this->_type = brain._type;
-	}
+	}*/
 	return (*this);
+	(void)brain;
 }
