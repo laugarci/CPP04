@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 11:40:54 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 16:39:47 by laugarci         ###   ########.fr       */
+/*   Created: 2024/01/19 11:01:44 by laugarci          #+#    #+#             */
+/*   Updated: 2024/01/19 11:27:12 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
-
-
-#define BOLD "\x1B[1m"
-#define RESET "\x1B[0m"
-#define RED "\x1B[31M"
-#define BGRED "\x1B[41m"
-#define GREEN "\x1B[32m"
+#ifndef WRONGANIMAL_HPP
+#define WRONGANIMAL_HPP
 
 #include <iostream>
 #include <string>
 
-class Animal {
+class WrongAnimal {
 	protected:
 		std::string _type;
 	public:
-		Animal();
-		Animal(std::string type);
-		virtual ~Animal();
-		Animal(const Animal& old);
-		Animal	&operator=(const Animal& animal);
+		WrongAnimal();
+		WrongAnimal(std::string type);
+		~WrongAnimal();
+		WrongAnimal(const WrongAnimal& old);
+		WrongAnimal	&operator=(const WrongAnimal& Wronganimal);
 		std::string	getType(void) const;
-		virtual void makeSound(void) const;
-		virtual void getIdeas(void) const;
+		void makeSound(void) const;
 };
 
 

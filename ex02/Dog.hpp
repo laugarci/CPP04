@@ -1,42 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 11:40:54 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 16:39:47 by laugarci         ###   ########.fr       */
+/*   Created: 2024/01/19 12:09:40 by laugarci          #+#    #+#             */
+/*   Updated: 2024/01/23 12:12:33 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
 
-
-#define BOLD "\x1B[1m"
-#define RESET "\x1B[0m"
-#define RED "\x1B[31M"
-#define BGRED "\x1B[41m"
-#define GREEN "\x1B[32m"
+#include "Animal.hpp"
+#include "Brain.hpp"
 
 #include <iostream>
 #include <string>
 
-class Animal {
-	protected:
-		std::string _type;
+class Dog: public Animal {
+	private:
+		Brain *_brain;
 	public:
-		Animal();
-		Animal(std::string type);
-		virtual ~Animal();
-		Animal(const Animal& old);
-		Animal	&operator=(const Animal& animal);
-		std::string	getType(void) const;
-		virtual void makeSound(void) const;
-		virtual void getIdeas(void) const;
+		Dog();
+		~Dog();
+		Dog(const Dog& old);
+		Dog &operator=(const Dog& dog);
+		void	makeSound() const;
+		void	printIdeas(int i) const;
+		void	getIdeas() const;
 };
-
-
 
 #endif

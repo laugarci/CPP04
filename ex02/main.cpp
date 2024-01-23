@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 14:38:46 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 16:19:07 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 void	type_and_sound_tests()
 {
 	std::cout << BGRED "[ CONSTRUCTORS ]" RESET << std::endl;
-	const Animal* meta = new Animal();
+	//const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	const WrongAnimal* wrongMeta = new WrongAnimal();
@@ -29,7 +29,6 @@ void	type_and_sound_tests()
 	std::cout << BGRED"[ Type tests ]"RESET << std::endl;
 	std::cout << GREEN"Type: "RESET << j->getType() << " " << std::endl;
 	std::cout << GREEN"Type: "RESET << i->getType() << " " << std::endl;
-	std::cout << GREEN"Type: "RESET << meta->getType() << " " << std::endl;
 	std::cout << GREEN"Type: "RESET << wrongMeta->getType() << " " << std::endl;
 	std::cout << GREEN"Type: "RESET << wrongI->getType() << " " << std::endl;
 
@@ -39,8 +38,6 @@ void	type_and_sound_tests()
 	std::cout << GREEN"Sound: "RESET;
 	j->makeSound();
 	std::cout << GREEN"Sound: "RESET;
-	meta->makeSound();
-	std::cout << GREEN"Sound: "RESET;
 	wrongI->makeSound();
 	std::cout << GREEN"Sound: "RESET;
 	wrongMeta->makeSound();
@@ -48,7 +45,6 @@ void	type_and_sound_tests()
 	std::cout << BGRED"[ DESTRUCTORS ]" RESET << std::endl;
 	delete wrongMeta;
 	delete wrongI;
-	delete meta;
 	delete i;
 	delete j;
 }
