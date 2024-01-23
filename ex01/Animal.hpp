@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:40:54 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 12:03:17 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:18:45 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class Animal {
 		Animal	&operator=(const Animal& animal);
 		std::string	getType(void) const;
 		virtual void makeSound(void) const;
+		virtual void getIdeas(void) const;
 };
 
 

@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:12:23 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 11:44:56 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:17:25 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ class Cat: public Animal {
 		Cat(const Cat& old);
 		Cat &operator=(const Cat& cat);
 		void	makeSound() const;
+		void	printIdeas() const;
+		void	getIdeas() const;
 };
 
 #endif

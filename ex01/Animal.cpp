@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/19 11:34:23 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:19:27 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,9 @@ void	Animal::makeSound(void) const
 {
 	std::cout << "* Random animal sounds *" << std::endl;
 }
+
+void Animal::getIdeas(void) const
+{
+	std::cout << "entra aqui" << std::endl;
+}
+

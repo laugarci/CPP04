@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 11:58:59 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 10:08:11 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:09:38 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 Brain::Brain()
 {
 	std::cout << "Brain default constructor called" << std::endl;
+	for (int i = 0; i < 100; i++)
+        this->_ideas[i] = "I don't have any idea";
 }
 
 Brain::~Brain()
@@ -37,4 +39,9 @@ Brain &Brain::operator=(const Brain& brain)
             this->_ideas[i] = brain._ideas[i];
     }
     return (*this);
+}
+
+std::string Brain::getIdeas() const
+{
+	return (this->_ideas[0]);
 }

@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 10:01:09 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 10:35:36 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ Dog &Dog::operator=(const Dog& dog)
 	if (this != &dog)
 	{
 		this->_type = dog._type;
+		this->_brain = new Brain;
 	}
 	return (*this);
 }
