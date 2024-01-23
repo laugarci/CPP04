@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 11:23:18 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 12:12:05 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,18 @@ void	Dog::makeSound(void) const
 	std::cout << "Guau guau" << std::endl;
 }
 
-void	Dog::getIdeas() const
+void Dog::printIdeas(int i) const
 {
-	std::cout << "Dog says: "<< this->_brain->getIdeas() << std::endl;
+	std::cout << this->_brain->getIdeas(i) << std::endl;
+}
+
+void Dog::getIdeas() const
+{
+	int i = 0;
+
+	while (i < 100)
+	{
+		this->printIdeas(i);
+		i++;
+	}
 }

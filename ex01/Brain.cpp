@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 11:58:59 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 11:09:38 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 12:13:04 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Brain &Brain::operator=(const Brain& brain)
     return (*this);
 }
 
-std::string Brain::getIdeas() const
+std::string Brain::getIdeas(int i) const
 {
-	return (this->_ideas[0]);
+	return (this->_ideas[i]);
 }

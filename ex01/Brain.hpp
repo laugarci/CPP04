@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:00:05 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 10:54:50 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 12:13:01 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Brain {
 		virtual ~Brain();
 		Brain(const Brain& old);
 		Brain	&operator=(const Brain& brain);
-		std::string getIdeas() const;
+		std::string getIdeas(int i) const;
 };
 
 #endif
