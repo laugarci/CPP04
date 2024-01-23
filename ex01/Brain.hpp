@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:00:05 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 12:03:21 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 10:07:57 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class Brain {
 	protected:
-		std::string ideas[100];
+		std::string _ideas[100];
 	public:
 		Brain();
 		Brain(std::string type);

@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 11:58:59 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 15:18:17 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 10:08:11 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,11 @@ Brain::Brain(const Brain& old)
 
 Brain &Brain::operator=(const Brain& brain)
 {
-/*	if (this != &brain)
-	{
-		this->_type = brain._type;
-	}*/
-	return (*this);
-	(void)brain;
+    std::cout << "Brain assignation operator called" << std::endl;
+    if (this != &brain)
+    {
+        for (int i = 0; i < 100; i++)
+            this->_ideas[i] = brain._ideas[i];
+    }
+    return (*this);
 }

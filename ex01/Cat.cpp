@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 14:48:55 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 10:00:53 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ Cat::Cat() : Animal("Cat")
 Cat::~Cat()
 {
 	std::cout << "Cat default destructor called" << std::endl;
+	delete this->_brain;
 }
 
 Cat::Cat(const Cat& old)

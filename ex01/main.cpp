@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/22 14:46:53 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 10:18:58 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "WrongCat.hpp"
 #include "Brain.hpp"
 
-int main()
+void	type_and_sound_tests()
 {
 	std::cout << BGRED "[ CONSTRUCTORS ]" RESET << std::endl;
 	const Animal* meta = new Animal();
@@ -32,6 +32,7 @@ int main()
 	std::cout << GREEN"Type: "RESET << meta->getType() << " " << std::endl;
 	std::cout << GREEN"Type: "RESET << wrongMeta->getType() << " " << std::endl;
 	std::cout << GREEN"Type: "RESET << wrongI->getType() << " " << std::endl;
+
 	std::cout << BGRED"[ Sounds test ]"RESET << std::endl;
 	std::cout << GREEN"Sound: "RESET;
 	i->makeSound();
@@ -50,13 +51,34 @@ int main()
 	delete meta;
 	delete i;
 	delete j;
+}
 
+void	loop_test()
+{
 	std::cout << BGRED"[ ARRAY OF ANIMALS CREATION ]" RESET<< std::endl;
 	const Animal *Animals[4];
 	Animals[0] = new Cat;
 	Animals[1] = new Cat;
 	Animals[2] = new Dog;
 	Animals[3] = new Dog;
+
+
+	std::cout << BGRED"[ DEEP COPIES TEST ]" RESET<< std::endl;
+	std::cout << BGRED"[ Type tests ]"RESET << std::endl;
+	std::cout << GREEN"Type: "RESET << Animals[0]->getType() << " " << std::endl;
+	std::cout << GREEN"Type: "RESET << Animals[1]->getType() << " " << std::endl;
+	std::cout << GREEN"Type: "RESET << Animals[2]->getType() << " " << std::endl;
+	std::cout << GREEN"Type: "RESET << Animals[3]->getType() << " " << std::endl;
+
+	std::cout << BGRED"[ Sounds test ]"RESET << std::endl;
+	std::cout << GREEN"Sound: "RESET;
+	Animals[0]->makeSound();
+	std::cout << GREEN"Sound: "RESET;
+	Animals[1]->makeSound();
+	std::cout << GREEN"Sound: "RESET;
+	Animals[2]->makeSound();
+	std::cout << GREEN"Sound: "RESET;
+	Animals[3]->makeSound();
 
 	int k;
 	k = 0;
@@ -66,5 +88,11 @@ int main()
 		delete Animals[k];
 		k++;
 	}
+}
+
+int main()
+{
+	type_and_sound_tests();
+	loop_test();
 	return 0;
 }
