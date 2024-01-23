@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 12:09:40 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/19 12:18:09 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:21:50 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class Dog: public Animal {
 		Dog(const Dog& old);
 		Dog &operator=(const Dog& dog);
 		void	makeSound() const;
+		void	getIdeas() const;
 };
 
 #endif

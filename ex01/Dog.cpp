@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 10:35:36 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:23:18 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,9 @@ Dog &Dog::operator=(const Dog& dog)
 void	Dog::makeSound(void) const
 {
 	std::cout << "Guau guau" << std::endl;
+}
+
+void	Dog::getIdeas() const
+{
+	std::cout << "Dog says: "<< this->_brain->getIdeas() << std::endl;
 }

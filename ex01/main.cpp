@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 11:19:32 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:24:10 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,8 @@ void	loop_test()
 	std::cout << BGRED"[ Ideas test ]"RESET << std::endl;
 	std::cout << GREEN"Cat ideas: "RESET;
 	Animals[0]->getIdeas();
-//	std::cout << GREEN"Dog ideas: "RESET;
-//	Animals[1]->printIdeas();
+	std::cout << GREEN"Dog ideas: "RESET;
+	Animals[2]->getIdeas();
 
 	int k;
 	k = 0;
