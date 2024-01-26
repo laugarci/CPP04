@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/19 11:34:23 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/26 10:12:40 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 Animal::Animal(std::string type)
 {
+	std::cout << "Animal type constructor called" << std::endl;
 	_type = type;
 }
 

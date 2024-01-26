@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 16:57:53 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/26 10:45:25 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,9 @@ std::string	Animal::getType() const
 void	Animal::makeSound(void) const
 {
 	std::cout << "* Random animal sounds *" << std::endl;
+}
+
+void	Animal::getIdeas(void) const
+{
+	std::cout << "I don't have brain" << std::endl;
 }

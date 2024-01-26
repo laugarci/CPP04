@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:57:00 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 12:12:18 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/26 10:39:50 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void Cat::printIdeas(int i) const
 void Cat::getIdeas() const
 {
 	int i = 0;
-
+	
 	while (i < 100)
 	{
 		this->printIdeas(i);

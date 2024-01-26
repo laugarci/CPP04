@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 16:19:07 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/26 10:51:55 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 void	type_and_sound_tests()
 {
 	std::cout << BGRED "[ CONSTRUCTORS ]" RESET << std::endl;
-	//const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 	const WrongAnimal* wrongMeta = new WrongAnimal();
@@ -53,10 +52,10 @@ void	loop_test()
 {
 	std::cout << BGRED"[ ARRAY OF ANIMALS CREATION ]" RESET<< std::endl;
 	const Animal *Animals[4];
-	Animals[0] = new Cat;
-	Animals[1] = new Cat;
-	Animals[2] = new Dog;
-	Animals[3] = new Dog;
+	Animals[0] = new Cat();
+	Animals[1] = new Cat();
+	Animals[2] = new Dog();
+	Animals[3] = new Dog();
 
 
 	std::cout << BGRED"[ DEEP COPIES TEST ]" RESET<< std::endl;

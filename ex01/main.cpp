@@ -6,7 +6,7 @@
 /*   By: laugarci <laugarci@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 15:25:25 by laugarci          #+#    #+#             */
-/*   Updated: 2024/01/23 14:38:46 by laugarci         ###   ########.fr       */
+/*   Updated: 2024/01/26 10:47:26 by laugarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,12 @@ void	loop_test()
 {
 	std::cout << BGRED"[ ARRAY OF ANIMALS CREATION ]" RESET<< std::endl;
 	const Animal *Animals[4];
-	Animals[0] = new Cat;
-	Animals[1] = new Cat;
-	Animals[2] = new Dog;
-	Animals[3] = new Dog;
+	Animals[0] = new Cat();
+	Animals[1] = new Cat();
+	Animals[2] = new Dog();
+	Animals[3] = new Dog();
+	
+	const Animal *animal = new Animal();
 
 
 	std::cout << BGRED"[ DEEP COPIES TEST ]" RESET<< std::endl;
@@ -80,11 +82,13 @@ void	loop_test()
 	std::cout << GREEN"Sound: "RESET;
 	Animals[3]->makeSound();
 
-/*	std::cout << BGRED"[ Ideas test ]"RESET << std::endl;
+	std::cout << BGRED"[ Ideas test ]"RESET << std::endl;
 	std::cout << GREEN"Cat ideas: "RESET;
 	Animals[0]->getIdeas();
 	std::cout << GREEN"Dog ideas: "RESET;
-	Animals[2]->getIdeas();*/
+	Animals[2]->getIdeas();
+	std::cout << GREEN"Animal ideas: "RESET;
+	animal->getIdeas();
 
 	int k;
 	k = 0;
@@ -94,6 +98,7 @@ void	loop_test()
 		delete Animals[k];
 		k++;
 	}
+	delete animal;
 }
 
 int main()
